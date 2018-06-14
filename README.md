@@ -1,1 +1,1 @@
-# cryptokitties [link]( https://petrushchenko.github.io/cryptokitties/build/index.html)
+# cryptokitties preview [link]( https://arturrudyk.github.io/CryptoKitties/build/)
