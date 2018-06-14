@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>cryptokitties</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<h3><span>Join our Discord server </span>and purr CryptoKitties community.</h3>
+			</div>	
+		</header>
+		<div class="container navigation">
+			<div class="navigation__logo">
+				<a href="#">
+					<img src="images/kitty.svg">
+					<h1>CryptoKitties</h1>
+				</a>
+			</div>
+			<nav class="navigation__menu">
+				<ul class="navigation__primary">
+					<li>
+						<a href="#">Start Meow</a>
+					</li>
+					<li>
+						<a href="#">Marketplace</a>
+					</li>
+				</ul>
+				<ul class="navigation__secondary">
+					<li>
+						<a href="#">FAQs</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<div class="more" >
+							<div class="more__title" role="button">More</div>
+							<div class="more__items">
+								<a href="#">About</a>
+								<a href="#">Newsletter</a>
+								<a href="#">Career</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<button class="navigation__button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<main class="main">
+			<div class="main__tabs">
+				<div class="container">
+					<a href="#" class="active">All Kitties</a>
+					<a href="#">Gen 0</a>
+				</div>
+			</div>
+			<div class="container">
+				<section class="toolbar">
+					<div class="toolbar__search">
+						<div class="search">
+							<div class="search__icon">
+								<i class="fas fa-search fa-1x"></i>
+							</div>
+							<input type="search" name="search" placeholder="Search">
+						</div>
+						<div class="filters">
+							<button>filter</button>
+							<span class="fas fa-sliders-h fa-1x"></span>
+						</div>
+					</div>
+					<div class="toolbar__filters filter">
+						<div class="filter__item">
+							<span>Kitty type</span>
+							<div >
+								<button class="filter__btn">Normal</button>
+								<button class="filter__btn">Fancy</button>
+								<button class="filter__btn">Exclusive</button>
+							</div>
+						</div>
+						<div class="filter__item">
+							<span>Generation</span>
+							<input type="number" name="generation" step="1" min="0" max="10">
+							<button type="reset">Reset</button>
+						</div>
+						<div class="filter__item">
+							<span>Cooldown</span>
+							<div>
+								<button class="filter__btn">Fast</button>
+								<button class="filter__btn">Swift</button>
+								<button class="filter__btn">Snappy</button>
+								<button class="filter__btn">Brisk</button>
+								<button class="filter__btn">Plodding</button>
+								<button class="filter__btn">Slow</button>
+								<button class="filter__btn">Sluggish</button>
+								<button class="filter__btn">Catatonic</button>
+							</div>
+						</div>
+					</div>
+					<div class="toolbar__include ">
+						<div >
+							<span>include</span>
+							<div>
+								<input type="checkbox" name="forsaling" id="saling">
+								<label for="saling">for seling</label>
+								<input type="checkbox" name="siring" id="siring">
+								<label for="siring">siring</label>
+								<input type="checkbox" name="other" id="other">
+								<label for="other">other</label>
+							</div>
+						</div>
+						<div>
+							<span>sort by</span>
+							<select>
+								<option value="0">Price</option>
+								<option value="1">Age</option>
+								<option value="2">Generation</option>
+								<option value="3">Cooldown</option>
+								<option value="4">Likes</option>
+							</select>
+							<select>
+								<option value="0">Low to high</option>
+								<option value="1">High to low</option>
+							</select>
+						</div>
+					</div>
+					<div class="quantity">
+						<span>quantity Kitties</span>
+					</div>
+				</section>
+				<section class="gallery">
+
+					<div class="gallery__items" id="gallery-items">
+
+
+					</div>
+
+					<template id="template-cat">
+						<div class="gallery__item">
+							<a href="#" class="kitty">
+								<div class="kitty__img">
+									<img src="images/1.svg">
+									<div class="kitty__status">
+										<span></span>
+										<p>For sale
+											<span>0.0060</span></p>
+									</div>
+								</div>
+								<div class="kitty__details">
+									<span >Kitty 665874</span>
+									<span>Gen 1</span>
+									<span>Swift</span>
+								</div>
+								<div class="kitty__badge" role="button">
+									<span class="far fa-heart fa-1x"></span>
+									<span>0</span>
+								</div>
+							</a>
+						</div>
+					</template>
+
+				</section>
+			</div>
+		</main>
+	</div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
