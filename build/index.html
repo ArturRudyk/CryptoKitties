@@ -92,17 +92,10 @@
 							<input type="number" name="generation" step="1" min="0" max="10">
 							<button type="reset">Reset</button>
 						</div>
-						<div class="filter__item">
+						<div class="filter__item" >
 							<span>Cooldown</span>
-							<div>
-								<button class="filter__btn">Fast</button>
-								<button class="filter__btn">Swift</button>
-								<button class="filter__btn">Snappy</button>
-								<button class="filter__btn">Brisk</button>
-								<button class="filter__btn">Plodding</button>
-								<button class="filter__btn">Slow</button>
-								<button class="filter__btn">Sluggish</button>
-								<button class="filter__btn">Catatonic</button>
+							<div class="filter__categories" id="filter__categories">
+
 							</div>
 						</div>
 					</div>
@@ -145,7 +138,7 @@
 					</div>
 
 					<template id="template-cat">
-						<div class="gallery__item">
+						<div class="gallery__item" data-category="fast">
 							<a href="#" class="kitty">
 								<div class="kitty__img">
 									<img src="images/1.svg">
@@ -168,6 +161,9 @@
 						</div>
 					</template>
 
+					<template id="template-filter-category">
+						<a class="filter__btn js-category-hidden category-hidden" data-category="fast">Fast</a>
+					</template>
 				</section>
 			</div>
 		</main>
